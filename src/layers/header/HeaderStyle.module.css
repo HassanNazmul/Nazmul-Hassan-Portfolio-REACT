@@ -1,0 +1,48 @@
+.contentBox {
+    background: #262626;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.contentLeft span {
+    font-size: 26px;
+    font-weight: 300;
+    display: inline-block;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contentLeft h2 {
+    font-size: 56px;
+    font-weight: 900;
+    background: -webkit-linear-gradient(right, #d61a5e, #ff8c05);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contentLeft button {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 28px 48px 28px 0;
+}
+
+.contentRight .profileImg img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.contentRight .profileImg img:hover {
+    transform: scale(1.15);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.contentRight .profile-img-mob img {
+    display: none;
+}
+
+.contentRight .profileImg {
+    filter: drop-shadow(-3px 17px 8px rgba(0, 0, 0, 0.3));
+}
