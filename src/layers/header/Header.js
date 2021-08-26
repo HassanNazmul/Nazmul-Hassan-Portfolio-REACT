@@ -5,11 +5,11 @@ import styles from './HeaderStyle.module.css'
 import nahidProfile from './../../img/profile.png'
 import nahidCV from './../../cv-nazmul-hassan.pdf'
 
-function Header(props) {
+function Header() {
 
     return (
         <React.Fragment>
-            <section id={styles.home}>
+            <section className={styles.home}>
                 <div className="layerGap">
                     <div className="container">
                         <div className={styles.contentBox}>
