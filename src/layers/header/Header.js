@@ -1,13 +1,11 @@
 import React from 'react';
-import {Link, useHistory} from "react-router-dom";
+import {Link} from "react-router-dom";
 import styles from './HeaderStyle.module.css'
 
 import nahidProfile from './../../img/profile.png'
 import nahidCV from './../../cv-nazmul-hassan.pdf'
 
 function Header(props) {
-
-    const history = useHistory();
 
     return (
         <React.Fragment>
