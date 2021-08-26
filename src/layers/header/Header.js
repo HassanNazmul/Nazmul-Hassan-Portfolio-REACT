@@ -15,6 +15,11 @@ function Header() {
                         <div className={styles.contentBox}>
                             <div className="row">
                                 <div className="col-lg-8 col-sm-12">
+                                    <div className={styles.contentRight}>
+                                        <div className={styles.profileMob}>
+                                            <img alt="profile-pic" src={nahidProfile}/>
+                                        </div>
+                                    </div>
                                     <div className={styles.contentLeft}>
                                         <span>I am Nazmul Hassan</span>
                                         <h2>Computer Engineer</h2>
@@ -22,7 +27,8 @@ function Header() {
                                             <button className="btn btn-outline-warning">Contact Me</button>
                                         </Link>
                                         <Link to={nahidCV} target="_blank">
-                                            <button className="btn btn-outline-warning" id="cv">Download CV</button>
+                                            <button className="btn btn-outline-warning" id={styles['cv']}>Download CV
+                                            </button>
                                         </Link>
                                     </div>
                                 </div>
