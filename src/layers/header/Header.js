@@ -1,9 +1,14 @@
 import React from 'react';
+import {Link, useHistory} from "react-router-dom";
 import styles from './HeaderStyle.module.css'
 
 import nahidProfile from './../../img/profile.png'
+import nahidCV from './../../cv-nazmul-hassan.pdf'
 
 function Header(props) {
+
+    const history = useHistory();
+
     return (
         <React.Fragment>
             <section id={styles.home}>
@@ -15,12 +20,12 @@ function Header(props) {
                                     <div className={styles.contentLeft}>
                                         <span>I am Nazmul Hassan</span>
                                         <h2>Computer Engineer</h2>
-                                        <a href="#contact">
+                                        <Link to="#contact">
                                             <button className="btn btn-outline-warning">Contact Me</button>
-                                        </a>
-                                        <a href="cv-nazmul-hassan.pdf" target="_blank">
+                                        </Link>
+                                        <Link to={nahidCV} target="_blank">
                                             <button className="btn btn-outline-warning" id="cv">Download CV</button>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
 
